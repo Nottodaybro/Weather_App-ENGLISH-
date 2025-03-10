@@ -11,12 +11,12 @@
 </h3>
 
 <p align="center">
-  Cek Websitenya <a href="https://your-deployment-link.com">Klik Saya</a>
+  Cek Websitenya <a href="https://lemon-weather.vercel.app/">Klik Saya</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/LemonSync/weather-app?style=for-the-badge" />
-  <img src="https://img.shields.io/github/languages/count/LemonSync/weather-app?style=for-the-badge" />
+  <img src="https://img.shields.io/github/repo-size/LemonSync/Weather_App?style=for-the-badge" />
+  <img src="https://img.shields.io/github/languages/count/LemonSync/Weather_App?style=for-the-badge" />
 </p>
 
 ---
