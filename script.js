@@ -29,9 +29,9 @@ const createWeatherCard = (city, weatherData, index) => {
         }
 };
 
-const getWeatherDetails = (city, lat, lon) => {
+const getWeatherDetails = (city, lati, lont) => {
         const apiKey = "267cf21554b098b03a55b035485b7dc6";
-        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lati}&lon=${lont}&appid=${apiKey}`;
         
         fetch(url)
                 .then(response => response.json())
@@ -68,7 +68,7 @@ const getCityCoordinates = () => {
         const cityName = cityInput.value.trim();
         if (cityName === '') return;
         
-        const apiKey = "267cf21554b098b03a55b035485b7dc6"; // Bukan Apikey Gw 😂😂
+        const apiKey = "267cf21554b098b03a55b035485b7dc6";
         const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
         
         fetch(url)
