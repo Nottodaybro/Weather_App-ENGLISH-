@@ -29,9 +29,9 @@ const createWeatherCard = (city, weatherData, index) => {
         }
 };
 
-const getWeatherDetails = (city, lati, lont) => {
+const getWeatherDetails = (city, latitude, longitude) => {
         const apiKey = "267cf21554b098b03a55b035485b7dc6";
-        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lati}&lon=${lont}&appid=${apiKey}`;
+        const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
         
         fetch(url)
                 .then(response => response.json())
