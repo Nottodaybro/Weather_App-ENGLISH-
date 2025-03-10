@@ -32,10 +32,6 @@
 
 ---
 
-## 🔒 Keamanan API
-File **HTML** dalam proyek ini telah **dienkripsi** untuk menjaga keamanan **API Web** yang digunakan. Langkah ini dilakukan agar kunci API tidak dapat diakses oleh publik dan mencegah penyalahgunaan data.
-
----
 
 ## 🛠️ Teknologi yang Digunakan
 <p align="center">
