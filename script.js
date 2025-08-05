@@ -68,14 +68,14 @@ const getCityCoordinates = () => {
         const cityName = cityInput.value.trim();
         if (cityName === '') return;
         
-        const apiKey = "267cf21554b098b03a55b035485b7dc6"; // Bukan Apikey Gw 😂😂
+        const apiKey = "267cf21554b098b03a55b035485b7dc6";
         const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
         
         fetch(url)
                 .then(response => response.json())
                 .then(data => {
                         if (!data.length) {
-                                alert(`Tidak ada koordinat yang ditemukan untuk ${cityName}`);
+                                alert(`Harap coba lagi, Tidak ada koordinat yang ditemukan untuk ${cityName}`);
                                 return;
                         }
                         
@@ -83,7 +83,7 @@ const getCityCoordinates = () => {
                         getWeatherDetails(name, lat, lon);
                 })
                 .catch(() => {
-                        alert("Terjadi kesalahan saat mengambil koordinat!");
+                        alert("Harap coba lagi, Terjadi kesalahan saat mengambil koordinat!");
                 });
 };
 
