@@ -206,3 +206,37 @@ h1 {
         font-size: 1.35rem;
     }
   }
+
+.unit-toggle {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.unit-toggle input[type="radio"] {
+  display: none;
+}
+
+.unit-toggle label {
+  cursor: pointer;
+  padding: 9px 26px;
+  border: 2px solid #5372F0; /* Your blue */
+  border-radius: 6px;
+  font-weight: 600;
+  color: #5372F0;
+  user-select: none;
+  transition: all 0.3s ease;
+  background-color: white;
+  font-size: 1rem;
+}
+
+.unit-toggle input[type="radio"]:checked + label {
+  background-color: #5372F0;
+  color: white;
+  box-shadow: 0 0 12px rgba(83, 114, 240, 0.6);
+}
+
+.unit-toggle label:hover {
+
+  background-color: #dbe4fc;
+}
