@@ -7,11 +7,11 @@
 </p>
 
 <h3 align="center">
-  🌍 Aplikasi Cuaca Sederhana dengan Prakiraan 5 Hari 📊
+  🌍 Simple Weather Application with 5-Day Forecast 📊
 </h3>
 
 <p align="center">
-  Cek Websitenya <a href="https://lemon-weather.vercel.app/">Klik Saya</a>
+  Check the Website <a href="https://lemon-weather.vercel.app/">Click Here</a>
 </p>
 
 <p align="center">
@@ -21,19 +21,19 @@
 
 ---
 
-## ✨ Tentang Proyek Ini
-**Weather App** adalah aplikasi cuaca berbasis web yang menampilkan informasi cuaca terkini dan prakiraan 5 hari ke depan. Dibangun menggunakan **HTML, CSS, dan JavaScript** dengan integrasi API cuaca.
+## ✨ About This Project
+**Weather App** is a web-based weather application that displays current weather information and a 5-day forecast.  
+Built using **HTML, CSS, and JavaScript** with weather API integration.
 
-🔹 **Fitur Utama**:
-- 🔍 **Cari Kota** – Masukkan nama kota untuk melihat cuaca saat ini  
-- 📍 **Gunakan Lokasi** – Dapatkan informasi cuaca berdasarkan lokasi langsung  
-- 🌡 **Detail Cuaca** – Menampilkan suhu, kecepatan angin, dan kelembapan  
-- 📅 **Prakiraan 5 Hari** – Lihat cuaca dalam beberapa hari ke depan  
+🔹 **Main Features**:
+- 🔍 **Search City** – Enter a city name to see the current weather  
+- 📍 **Use Location** – Get weather information based on your current location  
+- 🌡 **Weather Details** – Displays temperature, wind speed, and humidity  
+- 📅 **5-Day Forecast** – View the weather for the next several days  
 
 ---
 
-
-## 🛠️ Teknologi yang Digunakan
+## 🛠️ Technologies Used
 <p align="center">
   <img src="https://githubraw.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML5" width="50" height="50"/>
   <img src="https://githubraw.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS3" width="50" height="50"/>
@@ -42,12 +42,12 @@
 
 ---
 
-## 📬 Kontak
-Jika ada pertanyaan atau ingin berkontribusi, hubungi saya di:
+## 📬 Contact
+If you have any questions or want to contribute, feel free to reach out:
 - 🌐 **GitHub**: [LemonSync](https://github.com/LemonSync)
 - 📧 **Email**: [grouplemon0@gmail.com](mailto:grouplemon0@gmail.com)
 - 🐦 **Twitter**: [@SyncLemon](https://twitter.com/SyncLemon)
-- 📞 **WhatsApp**: [Hubungi Saya](https://wa.me/6285763482523)
+- 📞 **WhatsApp**: [Contact Me](https://wa.me/6285763482523)
 
 ---
 
