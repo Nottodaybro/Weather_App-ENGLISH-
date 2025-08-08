@@ -209,9 +209,12 @@ h1 {
 
 .unit-toggle {
   margin-top: 15px;
+  margin-bottom: 30px; /* adds space below the buttons */
   display: flex;
   gap: 12px;
+  /* existing styles... */
 }
+
 
 .unit-toggle input[type="radio"] {
   display: none;
