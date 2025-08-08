@@ -1,78 +1,85 @@
 <!-- CREDIT -->
-<!-- Dibuat 80% Oleh Lemon, termasuk style, foto, logo, fitur typing, cari dan pemasangan api. 20% GPT untuk repair error-->
-<!-- KALO MAU COPY KODENYA, JANGAN LUPA FOLLOW LAHHH AKUN GITHUB GW, ATAU *MINIMAL* KASIH BINTANG, Capek Aku Wak... -->
+<!-- Created 80% by Lemon, including style, photo, logo, typing feature, search, and API setup. 20% GPT for error repair -->
 <!-- [ LemonSync ] -->
-<!-- Tuh Akun GitHub Gw, atau https://github.com/LemonSync -->
+<!-- That's the GitHub Account of the original creator, or https://github.com/LemonSync -->
+<!-- Translated to English by nottodaybro -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-        <meta charset="utf-8">
-        <title>Weather App</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="weather.jpg" type="image/jpeg">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="script.js" defer></script>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="weather.jpg" type="image/jpeg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
-        <h1>Weather Dashboard</h1>
-        <div class="container">
-                <div class="weather-input">
-                        <h3>Masukkan Nama Kota Anda</h3>
-                        <input class="city-input" type="text" placeholder="Medan, Jakarta, Palembang.....">
-                        <button class="search-btn">Search</button>
-                        <div class="separator"></div>
-                        <button class="location-btn">Gunakan Lokasi Langsung</button>
-                </div>
-                <div class="weather-data">
-                        <div class="current-weather">
-                                <div class="details">
-                                        <h2>_______ ( ㅤㅤㅤㅤㅤ )</h2>
-                                        <h6>Temperature: ㅤㅤㅤ°C</h6>
-                                        <h6>Angin:ㅤㅤM/S</h6>
-                                        <h6>Kelembapan: ㅤ%</h6>
-                                </div>
-                        </div>
-                        <div class="days-forecast">
-                                <h2>Prakiraan 5-Hari</h2>
-                                <ul class="weather-cards">
-                                        <li class="card">
-                                                <h3>( ㅤㅤㅤㅤㅤ )</h3>
-                                                <h6>Temp: ㅤㅤ°C</h6>
-                                                <h6>Angin: ㅤㅤM/S</h6>
-                                                <h6>Kelembapan: ㅤ%</h6>
-                                        </li>
-                                        <li class="card">
-                                                <h3>( ㅤㅤㅤㅤㅤ )</h3>
-                                                <h6>Temp: ㅤㅤ°C</h6>
-                                                <h6>Angin: ㅤㅤM/S</h6>
-                                                <h6>Kelembapan: ㅤ%</h6>
-                                        </li>
-                                        <li class="card">
-                                                <h3>( ㅤㅤㅤㅤㅤ )</h3>
-                                                <h6>Temp: ㅤㅤ°C</h6>
-                                                <h6>Angin: ㅤㅤM/S</h6>
-                                                <h6>Kelembapan: ㅤ%</h6>
-                                        </li>
-                                        <li class="card">
-                                                <h3>( ㅤㅤㅤㅤㅤ )</h3>
-                                                <h6>Temp: ㅤㅤ°C</h6>
-                                                <h6>Angin: ㅤㅤM/S</h6>
-                                                <h6>Kelembapan: ㅤ%</h6>
-                                        </li>
-                                        <li class="card">
-                                                <h3>( ㅤㅤㅤㅤㅤ )</h3>
-                                                <h6>Temp: ㅤㅤ°C</h6>
-                                                <h6>Angin: ㅤㅤM/S</h6>
-                                                <h6>Kelembapan: ㅤ%</h6>
-                                        </li>
-                                </ul>
-                        </div>
-                </div>
+    <h1>Weather Dashboard</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter Your City Name</h3>
+            <input class="city-input" type="text" placeholder="Medan, Jakarta, Palembang.....">
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Use Current Location</button>
+
+            <!-- Unit toggle (°C / °F) -->
+            <div class="unit-toggle">
+                <label><input type="radio" name="unit" value="metric" checked> °C</label>
+                <label><input type="radio" name="unit" value="imperial"> °F</label>
+            </div>
         </div>
-        
+
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>_______ ( ㅤㅤㅤㅤㅤ )</h2>
+                    <h6>Temperature: ㅤㅤㅤ°C</h6>
+                    <h6>Wind: ㅤㅤM/S</h6>
+                    <h6>Humidity: ㅤ%</h6>
+                </div>
+            </div>
+
+            <div class="days-forecast">
+                <h2>5-Day Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                        <h3>( ㅤㅤㅤㅤㅤ )</h3>
+                        <h6>Temp: ㅤㅤ°C</h6>
+                        <h6>Wind: ㅤㅤM/S</h6>
+                        <h6>Humidity: ㅤ%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>( ㅤㅤㅤㅤㅤ )</h3>
+                        <h6>Temp: ㅤㅤ°C</h6>
+                        <h6>Wind: ㅤㅤM/S</h6>
+                        <h6>Humidity: ㅤ%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>( ㅤㅤㅤㅤㅤ )</h3>
+                        <h6>Temp: ㅤㅤ°C</h6>
+                        <h6>Wind: ㅤㅤM/S</h6>
+                        <h6>Humidity: ㅤ%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>( ㅤㅤㅤㅤㅤ )</h3>
+                        <h6>Temp: ㅤㅤ°C</h6>
+                        <h6>Wind: ㅤㅤM/S</h6>
+                        <h6>Humidity: ㅤ%</h6>
+                    </li>
+                    <li class="card">
+                        <h3>( ㅤㅤㅤㅤㅤ )</h3>
+                        <h6>Temp: ㅤㅤ°C</h6>
+                        <h6>Wind: ㅤㅤM/S</h6>
+                        <h6>Humidity: ㅤ%</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
