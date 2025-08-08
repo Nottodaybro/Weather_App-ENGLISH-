@@ -12,15 +12,20 @@ const getTemperatureUnitSymbol = (unit) => {
     return unit === "imperial" ? "°F" : "°C";
 };
 
+// Convert m/s to mph
+const mpsToMph = (mps) => (mps * 2.23694).toFixed(2);
+
 const createWeatherCard = (city, weatherData, index, unit) => {
     const tempUnit = getTemperatureUnitSymbol(unit);
+    const windSpeedMps = weatherData.wind.speed;
+    const windSpeedMph = mpsToMph(windSpeedMps);
 
     if (index === 0) {
         return `
         <div class="details">
             <h2>${city} (${weatherData.dt_txt.split(" ")[0]})</h2>
             <h6>Temperature: ${weatherData.main.temp.toFixed(2)}${tempUnit}</h6>
-            <h6>Wind: ${weatherData.wind.speed} M/S</h6>
+            <h6>Wind: ${windSpeedMps} M/S (${windSpeedMph} mph)</h6>
             <h6>Humidity: ${weatherData.main.humidity}%</h6>
         </div>
         <div class="icon">
@@ -33,7 +38,7 @@ const createWeatherCard = (city, weatherData, index, unit) => {
             <h3>(${weatherData.dt_txt.split(" ")[0]})</h3>
             <img src="https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@4x.png" alt="weather-icon">
             <h6>Temp: ${weatherData.main.temp.toFixed(2)}${tempUnit}</h6>
-            <h6>Wind: ${weatherData.wind.speed} M/S</h6>
+            <h6>Wind: ${windSpeedMps} M/S (${windSpeedMph} mph)</h6>
             <h6>Humidity: ${weatherData.main.humidity}%</h6>
         </li>`;
     }
